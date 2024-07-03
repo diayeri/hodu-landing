@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 body {
-  @apply text-black;
+  @apply text-black text-base;
   font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+h1,
+h2 {
+  @apply font-bold;
 }
 .cont {
   @apply px-5 max-w-[1300px] mx-auto;
@@ -14,5 +18,9 @@ body {
   @apply text-white rounded-full;
 }
 .btn-primary {
-  @apply bg-primary py-[15px] px-[30px] font-bold;
+  @apply bg-primary text-sm py-[11px] px-[24px] font-bold;
+  @apply lg:text-base lg:py-[15px] lg:px-[30px];
+}
+.btn-sns {
+  @apply w-8 h-8 p-1.5 bg-primary-light;
 }
