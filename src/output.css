@@ -554,12 +554,48 @@ video {
   --tw-contain-style:  ;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .flex {
   display: flex;
 }
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-\[102px\] {
+  height: 102px;
+}
+
+.h-\[178px\] {
+  height: 178px;
+}
+
+.h-\[70px\] {
+  height: 70px;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-\[76px\] {
+  height: 76px;
+}
+
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -574,8 +610,36 @@ video {
   gap: 30px;
 }
 
+.bg-bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 233 216 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .text-4xl {
   font-size: 48px;
+}
+
+.text-2xl {
+  font-size: 24px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(217 118 82 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 body {
@@ -587,7 +651,9 @@ body {
 .cont {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1280px;
+  max-width: 1300px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 /* 특정 문자열만 있거나, 특정 문자열로 시작하면서 바로 하이픈 - 기호가 있는 태그 */
@@ -599,4 +665,39 @@ body {
 }
 
 .btn-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 118 82 / var(--tw-bg-opacity));
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 700;
+}
+
+@media not all and (min-width: 1024px) {
+  .max-lg\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:h-\[160px\] {
+    height: 160px;
+  }
+
+  .lg\:h-10 {
+    height: 2.5rem;
+  }
+
+  .lg\:h-\[102px\] {
+    height: 102px;
+  }
+
+  .lg\:text-4xl {
+    font-size: 48px;
+  }
 }
