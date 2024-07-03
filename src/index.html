@@ -32,13 +32,17 @@
     </header>
     <main class="flex-grow">
       <section class="bg-bg-primary">
-        <article class="cont overflow-hidden">
-          <div class="flex flex-col gap-[30px] items-center text-center pt-10">
+        <article
+          class="cont overflow-hidden lg:flex lg:items-center lg:justify-between lg:gap-[100px]"
+        >
+          <div
+            class="flex flex-col gap-[30px] lg:gap-10 items-center max-lg:text-center lg:items-start pt-10"
+          >
             <h1 class="text-2xl lg:text-4xl">
-              Lorem Ipsum is simply dummy text <br class="md:hidden" />of the
-              printing and
+              Lorem Ipsum is simply <br />dummy text <br class="md:hidden" />of
+              the printing and
             </h1>
-            <p class="text-sm">
+            <p class="text-sm lg:text-base lg:max-w-[440px]">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown
@@ -47,49 +51,55 @@
           </div>
           <img
             src="./images/box-cat.png"
-            class="w-1/2 mx-auto mt-[30px] -mb-[62px]"
+            class="w-1/2 max-w-[415px] mx-auto mt-[30px] -mb-[62px] lg:-mb-[124px]"
             alt="hodu in a box"
           />
         </article>
       </section>
       <section>
-        <article class="cont pt-10 pb-5">
+        <article
+          class="cont pt-10 pb-5 lg:flex lg:gap-[110px] lg:items-center lg:pt-20 lg:pb-10"
+        >
           <img
             src="./images/img_4.jpg"
             alt="hodu on a bed"
-            class="aspect-[660/390] object-cover rounded-[30px] shadow-base-m"
+            class="aspect-[660/390] object-cover rounded-[30px] shadow-base-m lg:w-3/5 lg:max-w-[660px]"
           />
-          <h2 class="text-2xl mt-10 mb-5">
-            Lorem Ipsum is simply dummy text of the printing and dummy text
-          </h2>
-          <p class="text-sm">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
+          <div>
+            <h2 class="text-2xl lg:text-3xl mt-10 mb-5">
+              Lorem Ipsum is simply dummy text of the printing and dummy text
+            </h2>
+            <p class="text-sm lg:text-base">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
         </article>
-        <article class="cont pt-10 pb-5">
-          <h2 class="text-2xl text-primary mb-[30px] text-center">
+        <article class="cont pt-10 pb-5 lg:pt-20 lg:pb-10 lg:mb-[50px]">
+          <h2 class="text-2xl lg:text-4xl text-primary mb-[30px] text-center">
             dummy text of the printing and dummy
           </h2>
-          <p class="text-center">
+          <p class="text-center text-base">
             Lorem Ipsum is simply
             <strong class="text-primary">dummy text</strong> of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown
+            typesetting industry. <br />Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown
           </p>
           <div
-            class="wrap-img flex gap-5 py-10 mb-5 overflow-x-auto -mx-5 px-5"
+            class="wrap-img flex gap-5 py-10 max-lg:mb-5 max-lg:overflow-x-auto -mx-5 px-5 lg:gap-[72px] lg:my-12"
           >
             <img src="./images/img_1.jpg" alt="hodu on a cat tower" />
             <img src="./images/img_2.jpg" alt="hodu on a floor" />
             <img src="./images/img_3.jpg" alt="hodu staring at you" />
           </div>
-          <div class="flex flex-col lg:items-center">
+          <div
+            class="flex max-lg:flex-col lg:items-center lg:mx-auto lg:gap-[52px] lg:max-w-[940px]"
+          >
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown Ipsum is simply dummy text
-              of the printing and typesetting industry.
+              industry. <br />Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown Ipsum is simply dummy
+              text of the printing and typesetting industry.
             </p>
             <button type="button" class="btn-primary max-lg:self-end my-[30px]">
               Learn More
@@ -97,26 +107,30 @@
           </div>
         </article>
       </section>
-      <section class="relative pb-[172px]">
+      <section class="relative pb-[172px] lg:pb-[246px]">
         <div class="bg-subs"></div>
         <article class="cont">
           <div
-            class="flex flex-col bg-bg-secondary pt-9 px-8 pb-[30px] rounded-[18px] text-white z-1"
+            class="flex max-lg:flex-col lg:justify-between lg:items-center bg-bg-secondary pt-9 px-8 pb-[30px] lg:py-[50px] lg:px-[58px] rounded-[18px] text-white z-1"
           >
-            <div>
-              <h2 class="text-2xl font-bold">
+            <div class="lg:max-w-[490px]">
+              <h2 class="text-2xl lg:text-3xl font-bold">
                 Subscribe to our <br class="md:hidden" />Blog post
               </h2>
-              <p class="text-sm mt-5 mb-[30px]">
+              <p
+                class="text-sm mt-5 lg:mt-[18px] max-lg:mb-[30px] text-[#F2E9D8]"
+              >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text
               </p>
             </div>
-            <form>
-              <div class="flex flex-col gap-5">
+            <form class="lg:grow">
+              <div
+                class="flex max-lg:flex-col gap-5 lg:relative lg:max-w-[530px] lg:ml-auto lg:items-center"
+              >
                 <div
-                  class="relative flex pl-4 pr-5 gap-4 items-center rounded-full h-10 bg-white"
+                  class="relative flex pl-4 pr-5 lg:pl-7 lg:pr-[148px] gap-4 items-center rounded-full h-10 lg:h-[60px] lg:w-full bg-white"
                 >
                   <label for="mail">
                     <img
@@ -128,13 +142,13 @@
                   <input
                     type="text"
                     id="mail"
-                    class="w-full text-xs placeholder:text-[#767676] h-full"
+                    class="w-full text-xs lg:text-base placeholder:text-[#767676] h-full"
                     placeholder="Enter your e-mail address"
                   />
                 </div>
                 <button
                   type="button"
-                  class="btn-primary max-lg:self-end"
+                  class="btn-primary max-lg:self-end lg:absolute lg:right-[5px]"
                   id="showDialogBtn"
                 >
                   Subscribe
@@ -147,7 +161,9 @@
     </main>
     <footer class="bg-white">
       <div class="cont flex justify-between pt-[30px] pb-7 lg:h-[160px]">
-        <div class="flex max-lg:flex-col justify-between">
+        <div
+          class="flex max-lg:flex-col justify-between lg:grow lg:items-center"
+        >
           <a href="#"
             ><img
               src="./images/logo.svg"
@@ -184,7 +200,7 @@
     </footer>
     <dialog
       id="subsDialog"
-      class="bg-bg-primary bg-[url('./images/modal-bg-img.png')] bg-contain bg-no-repeat w-[300px] rounded-[30px] pt-10 px-7 pb-[30px] text-center"
+      class="bg-bg-primary bg-[url('./images/modal-bg-img.png')] bg-contain bg-no-repeat w-[300px] rounded-[30px] pt-10 px-7 pb-[30px] text-center shadow-dialog-m"
     >
       <img
         src="./images/cat-subscribe.png"

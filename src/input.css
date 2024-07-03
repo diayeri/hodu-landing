@@ -13,14 +13,16 @@ h2 {
 .cont {
   @apply px-5 max-w-[1300px] mx-auto;
 }
+
 .bg-subs {
-  @apply absolute bottom-0 left-0 w-full -z-10 h-[240px] bg-cover bg-no-repeat bg-blend-soft-light bg-[center_20%] md:bg-[center_38%];
+  @apply absolute bottom-0 left-0 w-full -z-10 h-[240px] bg-cover bg-no-repeat bg-blend-soft-light bg-[center_20%];
+  @apply md:bg-[center_38%] lg:h-[340px];
   background-color: rgba(242, 233, 216, 0.6);
   background-image: url("./images/img_5.jpg");
 }
 /* 특정 문자열만 있거나, 특정 문자열로 시작하면서 바로 하이픈 - 기호가 있는 태그 */
 [class|="btn"] {
-  @apply text-white rounded-full;
+  @apply text-white rounded-full text-nowrap;
 }
 .btn-primary {
   @apply bg-primary text-sm py-[11px] px-[24px] font-bold;
@@ -28,17 +30,9 @@ h2 {
 }
 .btn-sns {
   @apply w-8 h-8 p-1.5 bg-primary-light;
+  @apply w-[42px] h-[42px] p-[9px];
 }
 .wrap-img img {
   @apply w-[260px] rounded-[18px] shadow-base-m;
+  @apply lg:w-[calc((100%-144px)/3)] lg:shadow-base-pc;
 }
-input#mail {
-  @apply flex;
-  &::before {
-    @apply inline-block w-[18px] h-[18px];
-    content: "";
-    /* background-image: url("./images/mail.svg"); */
-    background: black;
-  }
-}
-/* img_5 */
