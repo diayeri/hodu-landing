@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-black;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+.cont {
+  @apply max-w-[1280px] mx-auto;
+}
+/* 특정 문자열만 있거나, 특정 문자열로 시작하면서 바로 하이픈 - 기호가 있는 태그 */
+[class|="btn"] {
+  @apply text-white rounded-full;
+}
+.btn-primary {
+}
