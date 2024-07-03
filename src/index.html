@@ -12,7 +12,7 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="flex flex-col min-h-[100vh]">
-    <header class="bg-bg-primary">
+    <header class="bg-bg-primary sticky top-0">
       <div class="cont flex h-[76px] lg:h-[102px] items-center">
         <a href="#"
           ><img src="./images/logo.svg" alt="HODU" class="h-7 lg:h-10"
@@ -63,7 +63,7 @@
           <img
             src="./images/img_4.jpg"
             alt="hodu on a bed"
-            class="aspect-[660/390] object-cover rounded-[30px] shadow-base-m lg:w-3/5 lg:max-w-[660px]"
+            class="aspect-[660/390] object-cover rounded-[30px] shadow-base-m lg:shadow-base-pc lg:w-[52%] lg:max-w-[660px]"
           />
           <div>
             <h2 class="text-2xl lg:text-3xl mt-10 mb-5">
@@ -170,7 +170,7 @@
               alt="HODU"
               class="h-[34px] lg:h-[70px]"
           /></a>
-          <div class="flex gap-4">
+          <div class="flex gap-4 lg:gap-5">
             <a href="#" target="_blank"
               ><img src="./images/blog.svg" alt="blog" class="btn-sns"
             /></a>
@@ -200,24 +200,29 @@
     </footer>
     <dialog
       id="subsDialog"
-      class="bg-bg-primary bg-[url('./images/modal-bg-img.png')] bg-contain bg-no-repeat w-[300px] rounded-[30px] pt-10 px-7 pb-[30px] text-center shadow-dialog-m"
+      class="bg-bg-primary bg-[url('./images/modal-bg-img.png')] bg-contain bg-no-repeat w-[300px] lg:w-[600px] rounded-[30px] pt-10 px-7 pb-[30px] lg:pt-[60px] lg:pb-10 text-center shadow-dialog-m lg:shadow-dialog-pc"
     >
       <img
         src="./images/cat-subscribe.png"
         alt="cat"
-        class="w-[60px] mx-auto"
+        class="w-[60px] lg:w-[110px] mx-auto"
       />
-      <h2 class="text-2xl text-primary mt-6 mb-2.5">Thank you!</h2>
-      <p class="sm">
+      <h2 class="text-2xl lg:text-3xl text-primary mt-6 mb-2.5 lg:mb-3">
+        Thank you!
+      </h2>
+      <p class="text-sm lg:text-base">
         Lorem Ipsum is simply dummy text of the printing industry.
       </p>
-      <button id="closeBtn" class="btn-primary mt-7">OK! I Love HODU</button>
+      <button id="closeBtn" class="btn-primary mt-7 lg:mt-[38px]">
+        OK! I Love HODU
+      </button>
     </dialog>
     <script>
       const dialog = document.getElementById("subsDialog");
       const showDialogBtn = document.getElementById("showDialogBtn");
       const closeBtn = document.getElementById("closeBtn");
 
+      dialog.showModal();
       showDialogBtn.addEventListener("click", () => {
         dialog.showModal();
         console.log("오르미 FE 짱짱");

@@ -10,6 +10,10 @@ h1,
 h2 {
   @apply font-bold;
 }
+button,
+a {
+  @apply cursor-pointer;
+}
 .cont {
   @apply px-5 max-w-[1300px] mx-auto;
 }
