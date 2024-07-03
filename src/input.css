@@ -10,10 +10,6 @@ h1,
 h2 {
   @apply font-bold;
 }
-button,
-a {
-  @apply cursor-pointer;
-}
 .cont {
   @apply px-5 max-w-[1300px] mx-auto;
 }
@@ -24,8 +20,8 @@ a {
   background-color: rgba(242, 233, 216, 0.6);
   background-image: url("./images/img_5.jpg");
 }
-/* 특정 문자열만 있거나, 특정 문자열로 시작하면서 바로 하이픈 - 기호가 있는 태그 */
-[class|="btn"] {
+/* 특정 문자열로 시작하는 요소를 모두 선택 */
+[class^="btn"] {
   @apply text-white rounded-full text-nowrap;
 }
 .btn-primary {
@@ -39,4 +35,16 @@ a {
 .wrap-img img {
   @apply w-[260px] rounded-[18px] shadow-base-m;
   @apply lg:w-[calc((100%-144px)/3)] lg:shadow-base-pc;
+}
+.btn-top {
+  &::after {
+    @apply inline-block w-10 h-10 bg-[#c4c4c4];
+    content: "";
+    mask: url("./images/top-btn.svg") no-repeat center / contain;
+  }
+  &:hover {
+    &::after {
+      @apply bg-[#767676];
+    }
+  }
 }

@@ -554,12 +554,36 @@ video {
   --tw-contain-style:  ;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
 }
 
 .sticky {
   position: sticky;
+}
+
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
+.right-6 {
+  right: 1.5rem;
 }
 
 .top-0 {
@@ -645,6 +669,10 @@ video {
   height: 34px;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .h-\[76px\] {
   height: 76px;
 }
@@ -667,6 +695,10 @@ video {
 
 .w-\[300px\] {
   width: 300px;
+}
+
+.w-\[50px\] {
+  width: 50px;
 }
 
 .w-\[60px\] {
@@ -695,6 +727,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -733,6 +769,15 @@ video {
   border-radius: 9999px;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-\[\#C4C4C4\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(196 196 196 / var(--tw-border-opacity));
+}
+
 .bg-bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(242 233 216 / var(--tw-bg-opacity));
@@ -746,6 +791,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-white\/80 {
+  background-color: rgb(255 255 255 / 0.8);
 }
 
 .bg-\[url\(\'\.\/images\/modal-bg-img\.png\'\)\] {
@@ -889,11 +938,6 @@ h2 {
   font-weight: 700;
 }
 
-button,
-a {
-  cursor: pointer;
-}
-
 .cont {
   margin-left: auto;
   margin-right: auto;
@@ -932,9 +976,9 @@ a {
   background-image: url("./images/img_5.jpg");
 }
 
-/* 특정 문자열만 있거나, 특정 문자열로 시작하면서 바로 하이픈 - 기호가 있는 태그 */
+/* 특정 문자열로 시작하는 요소를 모두 선택 */
 
-[class|="btn"] {
+[class^="btn"] {
   text-wrap: nowrap;
   border-radius: 9999px;
   --tw-text-opacity: 1;
@@ -987,6 +1031,33 @@ a {
     --tw-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.25);
     --tw-shadow-colored: 10px 10px 30px 0 var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+
+.btn-top {
+  &::after {
+    display: inline-block;
+  }
+  &::after {
+    height: 2.5rem;
+  }
+  &::after {
+    width: 2.5rem;
+  }
+  &::after {
+    --tw-bg-opacity: 1;
+    background-color: rgb(196 196 196 / var(--tw-bg-opacity));
+  }
+  &::after {
+    content: "";
+    -webkit-mask: url("./images/top-btn.svg") no-repeat center / contain;
+            mask: url("./images/top-btn.svg") no-repeat center / contain;
+  }
+  &:hover {
+    &::after {
+      --tw-bg-opacity: 1;
+      background-color: rgb(118 118 118 / var(--tw-bg-opacity));
+    }
   }
 }
 
@@ -1063,6 +1134,10 @@ a {
     margin-bottom: -124px;
   }
 
+  .lg\:mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
   .lg\:mb-\[50px\] {
     margin-bottom: 50px;
   }
@@ -1073,10 +1148,6 @@ a {
 
   .lg\:mt-\[18px\] {
     margin-top: 18px;
-  }
-
-  .lg\:mb-3 {
-    margin-bottom: 0.75rem;
   }
 
   .lg\:mt-\[38px\] {
@@ -1115,20 +1186,20 @@ a {
     width: 1.5rem;
   }
 
-  .lg\:w-\[52\%\] {
-    width: 52%;
-  }
-
-  .lg\:w-full {
-    width: 100%;
-  }
-
   .lg\:w-\[110px\] {
     width: 110px;
   }
 
+  .lg\:w-\[52\%\] {
+    width: 52%;
+  }
+
   .lg\:w-\[600px\] {
     width: 600px;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:max-w-\[440px\] {
@@ -1219,10 +1290,6 @@ a {
 
   .lg\:pt-20 {
     padding-top: 5rem;
-  }
-
-  .lg\:pb-\[60px\] {
-    padding-bottom: 60px;
   }
 
   .lg\:pt-\[60px\] {
