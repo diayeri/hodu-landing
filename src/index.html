@@ -132,7 +132,11 @@
                     placeholder="Enter your e-mail address"
                   />
                 </div>
-                <button type="submit" class="btn-primary max-lg:self-end">
+                <button
+                  type="button"
+                  class="btn-primary max-lg:self-end"
+                  id="showDialogBtn"
+                >
                   Subscribe
                 </button>
               </div>
@@ -151,19 +155,19 @@
               class="h-[34px] lg:h-[70px]"
           /></a>
           <div class="flex gap-4">
-            <a href="#"
+            <a href="#" target="_blank"
               ><img src="./images/blog.svg" alt="blog" class="btn-sns"
             /></a>
-            <a href="#"
+            <a href="#" target="_blank"
               ><img
                 src="./images/instagram.svg"
                 alt="instagram"
                 class="btn-sns"
             /></a>
-            <a href="#"
+            <a href="#" target="_blank"
               ><img src="./images/facebook.svg" alt="facebook" class="btn-sns"
             /></a>
-            <a href="#"
+            <a href="#" target="_blank"
               ><img src="./images/youtube.svg" alt="youtube" class="btn-sns"
             /></a>
           </div>
@@ -178,5 +182,34 @@
         </nav>
       </div>
     </footer>
+    <dialog
+      id="subsDialog"
+      class="bg-bg-primary bg-[url('./images/modal-bg-img.png')] bg-contain bg-no-repeat w-[300px] rounded-[30px] pt-10 px-7 pb-[30px] text-center"
+    >
+      <img
+        src="./images/cat-subscribe.png"
+        alt="cat"
+        class="w-[60px] mx-auto"
+      />
+      <h2 class="text-2xl text-primary mt-6 mb-2.5">Thank you!</h2>
+      <p class="sm">
+        Lorem Ipsum is simply dummy text of the printing industry.
+      </p>
+      <button id="closeBtn" class="btn-primary mt-7">OK! I Love HODU</button>
+    </dialog>
+    <script>
+      const dialog = document.getElementById("subsDialog");
+      const showDialogBtn = document.getElementById("showDialogBtn");
+      const closeBtn = document.getElementById("closeBtn");
+
+      showDialogBtn.addEventListener("click", () => {
+        dialog.showModal();
+        console.log("오르미 FE 짱짱");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        dialog.close();
+      });
+    </script>
   </body>
 </html>

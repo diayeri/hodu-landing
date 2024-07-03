@@ -601,6 +601,22 @@ video {
   margin-top: 30px;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2\.5 {
+  margin-bottom: 0.625rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -643,6 +659,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[300ox\] {
+  width: 300ox;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[60px\] {
+  width: 60px;
 }
 
 .flex-grow {
@@ -716,6 +744,26 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\/images\/modal-bg-img\.png\'\)\] {
+  background-image: url('./images/modal-bg-img.png');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-\[auto_100\%\] {
+  background-size: auto 100%;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -734,6 +782,11 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .pb-5 {
@@ -770,6 +823,10 @@ video {
 
 .pt-\[30px\] {
   padding-top: 30px;
+}
+
+.pb-\[30x\] {
+  padding-bottom: 30x;
 }
 
 .text-center {
