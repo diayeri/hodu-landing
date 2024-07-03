@@ -32,10 +32,11 @@
     </header>
     <main class="flex-grow">
       <section class="bg-bg-primary">
-        <article class="cont">
-          <div class="flex flex-col gap-[30px] items-center text-center">
+        <article class="cont overflow-hidden">
+          <div class="flex flex-col gap-[30px] items-center text-center pt-10">
             <h1 class="text-2xl lg:text-4xl">
-              Lorem Ipsum is simply dummy <wbr />text of the printing and
+              Lorem Ipsum is simply dummy text <br class="md:hidden" />of the
+              printing and
             </h1>
             <p class="text-sm">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -46,33 +47,39 @@
           </div>
           <img
             src="./images/box-cat.png"
-            class="w-1/2 mx-auto"
+            class="w-1/2 mx-auto mt-[30px] -mb-[62px]"
             alt="hodu in a box"
           />
         </article>
       </section>
       <section>
-        <article class="cont">
-          <img src="./images/img_4.jpg" alt="hodu on a bed" />
-          <h2 class="text-2xl">
+        <article class="cont pt-10 pb-5">
+          <img
+            src="./images/img_4.jpg"
+            alt="hodu on a bed"
+            class="aspect-[660/390] object-cover rounded-[30px] shadow-base-m"
+          />
+          <h2 class="text-2xl mt-10 mb-5">
             Lorem Ipsum is simply dummy text of the printing and dummy text
           </h2>
-          <p>
+          <p class="text-sm">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
         </article>
-        <article class="cont">
-          <h2 class="text-2xl text-primary">
+        <article class="cont pt-10 pb-5">
+          <h2 class="text-2xl text-primary mb-[30px] text-center">
             dummy text of the printing and dummy
           </h2>
-          <p>
+          <p class="text-center">
             Lorem Ipsum is simply
             <strong class="text-primary">dummy text</strong> of the printing and
             typesetting industry. Lorem Ipsum has been the industry's standard
             dummy text ever since the 1500s, when an unknown
           </p>
-          <div>
+          <div
+            class="wrap-img flex gap-5 py-10 mb-5 overflow-x-auto -mx-5 px-5"
+          >
             <img src="./images/img_1.jpg" alt="hodu on a cat tower" />
             <img src="./images/img_2.jpg" alt="hodu on a floor" />
             <img src="./images/img_3.jpg" alt="hodu staring at you" />
@@ -84,37 +91,51 @@
               ever since the 1500s, when an unknown Ipsum is simply dummy text
               of the printing and typesetting industry.
             </p>
-            <button type="button" class="btn-primary max-lg:self-end">
+            <button type="button" class="btn-primary max-lg:self-end my-[30px]">
               Learn More
             </button>
           </div>
         </article>
       </section>
-      <section>
+      <section class="relative pb-[172px]">
+        <div class="bg-subs"></div>
         <article class="cont">
           <div
-            class="flex flex-col bg-bg-secondary pt-9 px-8 pb-[30px] rounded-[18px] text-white"
+            class="flex flex-col bg-bg-secondary pt-9 px-8 pb-[30px] rounded-[18px] text-white z-1"
           >
-            <h2 class="text-2xl font-bold">
-              Subscribe to our <wbr />Blog post
-            </h2>
-            <p class="text-sm">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-            </p>
+            <div>
+              <h2 class="text-2xl font-bold">
+                Subscribe to our <br class="md:hidden" />Blog post
+              </h2>
+              <p class="text-sm mt-5 mb-[30px]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text
+              </p>
+            </div>
             <form>
-              <div>
-                <label for="email" class="sr-only">email</label>
-                <input
-                  type="text"
-                  id="email"
-                  class="w-full rounded-full h-10 pl-12 pr-5 text-xs placeholder:text-[#767676]"
-                  placeholder="Enter your e-mail address"
-                />
+              <div class="flex flex-col gap-5">
+                <div
+                  class="relative flex pl-4 pr-5 gap-4 items-center rounded-full h-10 bg-white"
+                >
+                  <label for="mail">
+                    <img
+                      src="./images/mail.svg"
+                      alt="mail"
+                      class="w-[18px] lg:w-6"
+                    />
+                  </label>
+                  <input
+                    type="text"
+                    id="mail"
+                    class="w-full text-xs placeholder:text-[#767676] h-full"
+                    placeholder="Enter your e-mail address"
+                  />
+                </div>
+                <button type="submit" class="btn-primary max-lg:self-end">
+                  Subscribe
+                </button>
               </div>
-              <button type="submit" class="btn-primary max-lg:self-end">
-                Learn More
-              </button>
             </form>
           </div>
         </article>

@@ -17,6 +17,10 @@ module.exports = {
         sm: "14px",
         xs: "12px",
       },
+      boxShadow: {
+        "base-m": "10px 10px 20px 0 rgba(0, 0, 0, 0.25)",
+        "base-pc": "10px 10px 30px 0 rgba(0, 0, 0, 0.25)",
+      },
     },
   },
   plugins: [],
