@@ -814,31 +814,6 @@ video {
      object-fit: cover;
 }
 
-.object-\[top_center\] {
-  -o-object-position: top center;
-     object-position: top center;
-}
-
-.object-top {
-  -o-object-position: top;
-     object-position: top;
-}
-
-.object-\[center_top\] {
-  -o-object-position: center top;
-     object-position: center top;
-}
-
-.object-\[center_40\%\] {
-  -o-object-position: center 40%;
-     object-position: center 40%;
-}
-
-.object-\[center_38\%\] {
-  -o-object-position: center 38%;
-     object-position: center 38%;
-}
-
 .object-\[center_32\%\] {
   -o-object-position: center 32%;
      object-position: center 32%;
@@ -1002,6 +977,31 @@ h2 {
 }
 
 .bg-subs {
+  background-color: rgba(242, 233, 216, 0.6);
+  background-image: url("./images/img_5.jpg");
+}
+
+.bg-subs-test {
+  height: 240px;
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+}
+
+@media (min-width: 768px) {
+  .bg-subs-test {
+    background-position: center 38%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-subs-test {
+    height: 340px;
+  }
+}
+
+.bg-subs-test {
   background-color: rgba(242, 233, 216, 0.6);
   background-image: url("./images/img_5.jpg");
 }

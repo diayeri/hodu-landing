@@ -20,6 +20,12 @@ h2 {
   background-color: rgba(242, 233, 216, 0.6);
   background-image: url("./images/img_5.jpg");
 }
+.bg-subs-test {
+  @apply h-[240px] bg-cover bg-no-repeat bg-blend-soft-light bg-[center_20%];
+  @apply md:bg-[center_38%] lg:h-[340px];
+  background-color: rgba(242, 233, 216, 0.6);
+  background-image: url("./images/img_5.jpg");
+}
 /* 특정 문자열로 시작하는 요소를 모두 선택 */
 [class^="btn"] {
   @apply text-white rounded-full text-nowrap;
