@@ -590,6 +590,10 @@ video {
   top: 0px;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .-mx-5 {
   margin-left: -1.25rem;
   margin-right: -1.25rem;
@@ -647,6 +651,18 @@ video {
 
 .mt-\[30px\] {
   margin-top: 30px;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.mt-\[280px\] {
+  margin-top: 280px;
+}
+
+.mt-\[260px\] {
+  margin-top: 260px;
 }
 
 .flex {
@@ -715,6 +731,26 @@ video {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.translate-x-1\/2 {
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-\[280px\] {
+  --tw-translate-y: -280px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-\[80\%\] {
+  --tw-translate-y: -80%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-col {
@@ -875,6 +911,10 @@ video {
   padding-top: 30px;
 }
 
+.pt-\[100px\] {
+  padding-top: 100px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -907,6 +947,11 @@ video {
 .text-\[\#F2E9D8\] {
   --tw-text-opacity: 1;
   color: rgb(242 233 216 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-primary {
@@ -952,7 +997,7 @@ h3 {
   padding-right: 1.25rem;
 }
 
-.bg-subs {
+.bg-subs-test {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -966,6 +1011,31 @@ h3 {
 }
 
 @media (min-width: 768px) {
+  .bg-subs-test {
+    background-position: center 38%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-subs-test {
+    height: 340px;
+  }
+}
+
+.bg-subs-test {
+  background-color: rgba(242, 233, 216, 0.6);
+  background-image: url("./images/img_5.jpg");
+}
+
+.bg-subs {
+  height: 240px;
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+}
+
+@media (min-width: 768px) {
   .bg-subs {
     background-position: center 38%;
   }
@@ -978,31 +1048,6 @@ h3 {
 }
 
 .bg-subs {
-  background-color: rgba(242, 233, 216, 0.6);
-  background-image: url("./images/img_5.jpg");
-}
-
-.bg-subs-test {
-  height: 240px;
-  background-size: cover;
-  background-position: center 20%;
-  background-repeat: no-repeat;
-  background-blend-mode: soft-light;
-}
-
-@media (min-width: 768px) {
-  .bg-subs-test {
-    background-position: center 38%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .bg-subs-test {
-    height: 340px;
-  }
-}
-
-.bg-subs-test {
   background-color: rgba(242, 233, 216, 0.6);
   background-image: url("./images/img_5.jpg");
 }
@@ -1103,12 +1148,21 @@ h3 {
 }
 
 @media not all and (min-width: 1024px) {
+  .max-lg\:my-\[30px\] {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .max-lg\:mb-5 {
     margin-bottom: 1.25rem;
   }
 
   .max-lg\:mb-\[30px\] {
     margin-bottom: 30px;
+  }
+
+  .max-lg\:mt-\[30px\] {
+    margin-top: 30px;
   }
 
   .max-lg\:hidden {
@@ -1125,6 +1179,10 @@ h3 {
 
   .max-lg\:overflow-x-auto {
     overflow-x: auto;
+  }
+
+  .max-lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .max-lg\:text-center {
@@ -1183,6 +1241,10 @@ h3 {
 
   .lg\:mt-\[38px\] {
     margin-top: 38px;
+  }
+
+  .lg\:mt-\[100px\] {
+    margin-top: 100px;
   }
 
   .lg\:flex {
@@ -1255,6 +1317,11 @@ h3 {
 
   .lg\:grow {
     flex-grow: 1;
+  }
+
+  .lg\:-translate-y-1\/2 {
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:items-start {

@@ -110,10 +110,62 @@
           </div>
         </article>
       </section>
-      <section>
+      <section class="relative pb-[172px] lg:pb-[246px]">
         <h2 class="sr-only">subscribe</h2>
+        <div class="bg-subs-test"></div>
+        <article class="cont">
+          <div
+            class="flex max-lg:flex-col lg:justify-between lg:items-center bg-bg-secondary pt-9 px-8 pb-[30px] lg:py-[50px] lg:px-[58px] rounded-[18px] text-white z-1"
+          >
+            <div class="lg:max-w-[490px]">
+              <h3 class="text-2xl font-bold lg:text-3xl">
+                Subscribe to our <br class="md:hidden" />Blog post
+              </h3>
+              <p
+                class="text-sm mt-5 lg:mt-[18px] max-lg:mb-[30px] text-[#F2E9D8]"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text
+              </p>
+            </div>
+            <form class="lg:grow">
+              <div
+                class="flex max-lg:flex-col gap-5 lg:relative lg:max-w-[530px] lg:ml-auto lg:items-center"
+              >
+                <div
+                  class="relative flex pl-4 pr-5 lg:pl-7 lg:pr-[148px] gap-4 items-center rounded-full h-10 lg:h-[60px] lg:w-full bg-white"
+                >
+                  <label for="mail">
+                    <img
+                      src="./src/images/mail.svg"
+                      alt="mail"
+                      class="w-[18px] lg:w-6"
+                    />
+                  </label>
+                  <input
+                    type="email"
+                    id="mail"
+                    class="w-full text-xs lg:text-base placeholder:text-[#767676] text-black h-full"
+                    placeholder="Enter your e-mail address"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="btn-primary max-lg:self-end lg:absolute lg:right-[5px]"
+                  id="showDialogBtn"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+      <!-- <section>
+        <h2 class="sr-only">subscribe</h2>
+        <div class="bg-subs-test"></div>
         <article class="relative cont bg-subs-test">
-          <!-- FIX: 위로 올리기 안되네 -->
           <div
             class="flex max-lg:flex-col lg:justify-between lg:items-center bg-bg-secondary pt-9 px-8 pb-[30px] lg:py-[50px] lg:px-[58px] rounded-[18px] text-white z-1"
           >
@@ -161,7 +213,7 @@
             </form>
           </div>
         </article>
-      </section>
+      </section> -->
     </main>
     <footer class="bg-white">
       <div class="cont flex justify-between pt-[30px] pb-7 lg:h-[160px]">
