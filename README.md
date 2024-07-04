@@ -8,10 +8,10 @@ HTML, tailwind CSS, JavaScript
 
 ## 작업 시 유의사항
 
-tailwind CSS의 Watch 모드를 활성화하여, input.css 의 변경사항이 자동으로 output.css에 반영되도록 해야합니다.
+tailwind CSS의 Watch 모드를 활성화하여, input.css 의 변경사항이 자동으로 output.css에 반영되도록 합니다.
 
 ```
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
 
 ## 버전 및 업데이트 정보
