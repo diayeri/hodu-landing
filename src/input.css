@@ -48,3 +48,6 @@ h2 {
     }
   }
 }
+#subsDialog {
+  background-image: url("./images/modal-bg-img.png");
+}
