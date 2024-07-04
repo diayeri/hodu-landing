@@ -10,9 +10,16 @@ HTML, tailwind CSS, JavaScript
 
 tailwind CSS의 Watch 모드를 활성화하여, input.css 의 변경사항이 자동으로 output.css에 반영되도록 합니다.
 
+- 파일경로 지정에 주의합니다.
+
 ```
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
+
+HTML 파일의 위치가 src 폴더 내부가 아닌 경우, tailwind class로 상대경로를 이용할 경우 주의해야 합니다.
+
+- 파일 위치는 HTML 파일 기준이 아니고, 작성한 CSS 위치 기준입니다. (빌드된 CSS 위치도 아님)
+- 예) `test.html` 내 `bg-[url('./images/modal-bg-img.png')]`와 같은 클래스명으로 배경 이미지를 지정할 때, 이미지 경로는 실제 CSS 파일이 위치한 경로를 기준으로 해석됩니다. 이 경우 `input.css` 파일의 위치를 기준으로 경로가 해석됩니다.
 
 ## 버전 및 업데이트 정보
 
