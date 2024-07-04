@@ -814,6 +814,36 @@ video {
      object-fit: cover;
 }
 
+.object-\[top_center\] {
+  -o-object-position: top center;
+     object-position: top center;
+}
+
+.object-top {
+  -o-object-position: top;
+     object-position: top;
+}
+
+.object-\[center_top\] {
+  -o-object-position: center top;
+     object-position: center top;
+}
+
+.object-\[center_40\%\] {
+  -o-object-position: center 40%;
+     object-position: center 40%;
+}
+
+.object-\[center_38\%\] {
+  -o-object-position: center 38%;
+     object-position: center 38%;
+}
+
+.object-\[center_32\%\] {
+  -o-object-position: center 32%;
+     object-position: center 32%;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
