@@ -1,6 +1,10 @@
 # hodu-landing
 
-시멘틱한 코드 작성을 연습하기 위해 고양이 호두의 웹페이지를 구현한 미니 프로젝트입니다. PC/Mobile 반응형으로 제작하였습니다.
+이 페이지는 시멘틱한 코드 작성을 연습할 목적으로 PC/Mobile 반응형으로 제작되었습니다.
+
+- HTML 파일: `./src/index.html`
+- CSS 파일: `./src/input.css`
+- 배포 링크: https://diayeri.github.io/hodu-landing/src/
 
 ## 기술 스택
 
